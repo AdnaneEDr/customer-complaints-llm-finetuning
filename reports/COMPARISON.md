@@ -82,7 +82,7 @@ Il n’y a aucune validation de fidélité, pertinence ou absence d’hallucinat
 ## Vérifications et limites
 
 13 tests pytest locaux réussis, sans skip : données, parsing, échecs, CSV, baseline, rechargement des deux adaptateurs entraînés et comparaison Streamlit. Ruff passe.
-Répétition de CI sans PyTorch ni dataset : six tests passent, sept tests d’intégration sont ignorés. GitHub Actions est préparé, pas exécuté sur un compte distant.
+Répétition de CI sans PyTorch ni dataset : six tests passent, sept tests d’intégration sont ignorés. GitHub Actions léger a été exécuté avec succès lors de la publication du dépôt public.
 Le serveur Streamlit local répond HTTP 200. Le parcours CSV teste les fonctions réellement partagées avec l’interface ; aucune automatisation du clic sur le sélecteur de fichier du navigateur n’est prétendue.
 Limites : test de 45 exemples, trois produits financiers historiques, labels consommateur bruités, échantillon équilibré artificiellement, troncature et aucune validation française. Pas de conclusion statistique générale ni de comparaison avec les grands LLM.
-Colab préparé, non exécuté ; aucune ressource payante créée. Aucun dépôt, dataset ou modèle publié sur un compte externe.
+Colab préparé, non exécuté ; aucune ressource payante créée. Code publié sur GitHub avec autorisation ; dataset et modèles locaux exclus du dépôt.

@@ -1,10 +1,12 @@
 # Fine-tuning et évaluation comparative d’un LLM pour l’analyse des réclamations clients
 
+[![GitHub Actions](https://github.com/AdnaneEDr/customer-complaints-llm-finetuning/actions/workflows/ci.yml/badge.svg)](https://github.com/AdnaneEDr/customer-complaints-llm-finetuning/actions/workflows/ci.yml)
+
 Projet portfolio exécuté sur Windows, Intel i7-13620H, 16 Go de RAM, Intel UHD, PyTorch CPU. Interface française ; données et modèle évalués **en anglais**. Trois produits CFPB historiques : `Mortgage`, `Debt collection`, `Credit card`. Ce périmètre fermé ne couvre pas toutes les réclamations clients.
 
 Le rapport mesuré se trouve dans [reports/COMPARISON.md](reports/COMPARISON.md). Les résultats bruts sont conservés dans `reports/`, les modèles réellement entraînés dans `artifacts/`. Ne pas présenter un adaptateur smoke comme une amélioration de qualité.
 
-Exécutions vérifiées le 13 octobre 2026 : LoRA complet, trois epochs et 315 étapes sur CPU ; baseline classique 91,1 % d’accuracy, LLM de base 0 % au contrat JSON strict, LoRA 80 % et 100 % de JSON conformes sur 45 récits. Les 13 tests finaux passent sans skip, ainsi que Ruff. Aucun entraînement nécessaire n’est bloqué ; Colab et la CI distante ne sont pas exécutés.
+Exécutions vérifiées le 13 octobre 2026 : LoRA complet, trois epochs et 315 étapes sur CPU ; baseline classique 91,1 % d’accuracy, LLM de base 0 % au contrat JSON strict, LoRA 80 % et 100 % de JSON conformes sur 45 récits. Les 13 tests finaux passent sans skip, ainsi que Ruff. La CI légère a également réussi sur GitHub Actions. Aucun entraînement nécessaire n’est bloqué ; Colab n’est pas exécuté.
 
 Autres livrables : [fiche modèle](MODEL_CARD.md), [explication pédagogique](docs/PEDAGOGIE.md), [démo cinq minutes](docs/DEMO_5_MIN.md), [trois puces CV](docs/CV.md), [notebook Colab](notebooks/colab.ipynb) et [analyse d’erreurs](reports/ANALYSIS.md).
 
@@ -19,6 +21,11 @@ Après installation et entraînement avec les commandes ci-dessous, depuis la ra
 ## Installation reproductible dans une nouvelle copie
 
 Python 3.12 et accès Internet requis. L’exécution de référence a utilisé un environnement Python isolé sur Windows. Aucun compte, secret ou service payant nécessaire.
+
+```bash
+git clone https://github.com/AdnaneEDr/customer-complaints-llm-finetuning.git
+cd customer-complaints-llm-finetuning
+```
 
 Windows PowerShell, à la racine de ce projet :
 
@@ -103,7 +110,7 @@ La grille `reports/human_rubric.csv` évalue **séparément** fidélité, pertin
 
 L’interface accepte `demo.csv`, exporte CSV/JSON, affiche les sorties brutes invalides, signale l’absence d’adaptateur et conserve un seul LLM en mémoire. Les exemples de `demo.csv` sont des entrées illustratives rédigées pour la démonstration, jamais utilisées pour entraîner ou évaluer les scores réels.
 
-Le notebook `notebooks/colab.ipynb` offre la procédure GPU gratuite, non exécutée dans cette session. Aucune publication externe effectuée. Avant publication GitHub, contrôler les rapports d’erreurs contenant du texte réel et ne pas inclure `data/` ou `artifacts/` ; ils sont ignorés par Git. Les commandes GitHub CI sont préparées, pas présentées comme une CI distante exécutée.
+Le notebook `notebooks/colab.ipynb` offre la procédure GPU gratuite, non exécutée dans cette session. Le code et les rapports sans récits bruts sont publiés sur GitHub à la demande du propriétaire. `data/`, `artifacts/` et les prédictions contenant les récits sont exclus du dépôt. La CI GitHub légère exécute les tests sans données ni poids LLM ; les tests d’intégration complets ont été vérifiés localement.
 
 Documentation officielle consultée : [Transformers chat templates](https://huggingface.co/docs/transformers/chat_templating), [PEFT LoRA](https://huggingface.co/docs/peft/en/package_reference/lora), [Datasets loading](https://huggingface.co/docs/datasets/loading), [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html), [Streamlit AppTest](https://docs.streamlit.io/develop/api-reference/app-testing/st.testing.v1.apptest).
 

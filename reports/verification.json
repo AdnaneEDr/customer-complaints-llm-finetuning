@@ -15,7 +15,10 @@
   "app_comparison_test": "passed",
   "csv_import_export_test": "passed",
   "colab_executed": false,
-  "remote_ci_executed": false,
-  "external_publication": false,
-  "blocked_required_training": []
+  "remote_ci_executed": true,
+  "external_publication": true,
+  "blocked_required_training": [],
+  "publication_url": "https://github.com/AdnaneEDr/customer-complaints-llm-finetuning",
+  "remote_ci_conclusion": "success",
+  "remote_ci_run_url": "https://github.com/AdnaneEDr/customer-complaints-llm-finetuning/actions/runs/38388338912"
 }
