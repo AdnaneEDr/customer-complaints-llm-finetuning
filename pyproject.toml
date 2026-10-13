@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "complaints-llm"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = ["torch", "transformers==4.57.1", "peft==0.17.1", "datasets==4.2.0", "scikit-learn", "streamlit", "requests", "psutil", "matplotlib"]
+[project.scripts]
+complaints = "complaints.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+[tool.ruff]
+line-length = 110

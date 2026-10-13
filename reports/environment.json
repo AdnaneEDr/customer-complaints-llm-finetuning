@@ -1,0 +1,14 @@
+{
+  "os": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "ram_bytes": 16857817088,
+  "cpu": "Intel i7-13620H",
+  "graphics": "Intel UHD",
+  "cuda": false,
+  "torch": "2.14.1+cpu",
+  "logical_processors": 16,
+  "physical_cores": 10,
+  "initial_free_disk_bytes": 711237005312,
+  "graphics_adapter_reported_ram_bytes": 2147479552,
+  "graphics_memory_note": "Windows AdapterRAM; not dedicated CUDA VRAM"
+}

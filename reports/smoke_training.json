@@ -1,0 +1,63 @@
+{
+  "smoke": true,
+  "n_train": 8,
+  "trainable": 460800,
+  "total": 134975808,
+  "seconds": 21.5679123000009,
+  "rss_bytes_end": 1085026304,
+  "history": [
+    {
+      "loss": 1.1983,
+      "grad_norm": 1.6192219257354736,
+      "learning_rate": 0.0003,
+      "epoch": 0.25,
+      "step": 1
+    },
+    {
+      "loss": 1.061,
+      "grad_norm": 1.350182294845581,
+      "learning_rate": 0.00019999999999999998,
+      "epoch": 0.5,
+      "step": 2
+    },
+    {
+      "loss": 0.9747,
+      "grad_norm": 1.3977199792861938,
+      "learning_rate": 9.999999999999999e-05,
+      "epoch": 0.75,
+      "step": 3
+    },
+    {
+      "eval_loss": 1.0611443519592285,
+      "eval_runtime": 3.6693,
+      "eval_samples_per_second": 0.818,
+      "eval_steps_per_second": 0.818,
+      "epoch": 0.75,
+      "step": 3
+    },
+    {
+      "train_runtime": 20.5661,
+      "train_samples_per_second": 0.292,
+      "train_steps_per_second": 0.146,
+      "total_flos": 796142006784.0,
+      "train_loss": 1.0779858827590942,
+      "epoch": 0.75,
+      "step": 3
+    }
+  ],
+  "config": {
+    "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "seed": 42,
+    "per_class": 100,
+    "max_text_tokens": 160,
+    "max_new_tokens": 100,
+    "threads": 4,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "learning_rate": 0.0003,
+    "full_epochs": 3,
+    "smoke_steps": 3
+  },
+  "objective": "completion-only category JSON"
+}

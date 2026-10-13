@@ -1,0 +1,1 @@
+{"model":"HuggingFaceTB/SmolLM2-135M-Instruct","seed":42,"per_class":100,"max_text_tokens":160,"max_new_tokens":100,"threads":4,"lora_r":8,"lora_alpha":16,"lora_dropout":0.05,"learning_rate":0.0003,"full_epochs":3,"smoke_steps":3}

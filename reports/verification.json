@@ -1,0 +1,21 @@
+{
+  "tests": 13,
+  "failures": 0,
+  "ruff": "passed",
+  "dataset_n": 300,
+  "classic_trained": true,
+  "base_evaluated": true,
+  "lora_smoke_trained": true,
+  "lora_full_trained": true,
+  "adapters_reloaded": [
+    "adapter_smoke",
+    "adapter_full"
+  ],
+  "test_n": 45,
+  "app_comparison_test": "passed",
+  "csv_import_export_test": "passed",
+  "colab_executed": false,
+  "remote_ci_executed": false,
+  "external_publication": false,
+  "blocked_required_training": []
+}

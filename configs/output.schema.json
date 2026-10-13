@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ComplaintAnalysis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["category", "summary", "justification"],
+  "properties": {
+    "category": {"enum": ["Mortgage", "Debt collection", "Credit card"]},
+    "summary": {"type": ["string", "null"]},
+    "justification": {"type": ["string", "null"]}
+  }
+}

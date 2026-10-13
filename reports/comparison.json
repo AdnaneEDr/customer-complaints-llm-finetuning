@@ -1,0 +1,297 @@
+{
+  "hardware": "Windows-11-10.0.26300-SP0",
+  "device": "CPU float32",
+  "batch_size": 1,
+  "method": "perf_counter; warmup excluded; model loading excluded; sequential",
+  "test_ids": [
+    "2720845",
+    "1587013",
+    "1695125",
+    "2230835",
+    "1617107",
+    "2034500",
+    "1871692",
+    "1858876",
+    "2711196",
+    "2862824",
+    "1508673",
+    "2115025",
+    "2134946",
+    "2007233",
+    "2016074",
+    "1562416",
+    "2034642",
+    "1782429",
+    "2556267",
+    "2658490",
+    "2386840",
+    "1851628",
+    "2697991",
+    "2150209",
+    "2002536",
+    "2860600",
+    "1723772",
+    "2014219",
+    "2595460",
+    "1760619",
+    "2568105",
+    "2655714",
+    "2360548",
+    "1610810",
+    "1498451",
+    "2435427",
+    "2175027",
+    "2719331",
+    "1769483",
+    "2698175",
+    "2280672",
+    "1725689",
+    "1692916",
+    "1531825",
+    "1309315"
+  ],
+  "adapter": "adapter_full",
+  "models": {
+    "classic": {
+      "n": 45,
+      "accuracy": 0.9111111111111111,
+      "macro_f1": 0.9103201087628229,
+      "per_class": {
+        "Mortgage": {
+          "precision": 0.9285714285714286,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.896551724137931,
+          "support": 15.0
+        },
+        "Debt collection": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        },
+        "Credit card": {
+          "precision": 0.8666666666666667,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.8666666666666667,
+          "support": 15.0
+        },
+        "accuracy": 0.9111111111111111,
+        "macro avg": {
+          "precision": 0.9109126984126984,
+          "recall": 0.9111111111111111,
+          "f1-score": 0.9103201087628229,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.9109126984126985,
+          "recall": 0.9111111111111111,
+          "f1-score": 0.910320108762823,
+          "support": 45.0
+        }
+      },
+      "confusion_labels": [
+        "Mortgage",
+        "Debt collection",
+        "Credit card",
+        "__INVALID__"
+      ],
+      "confusion_matrix": [
+        [
+          13,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          15,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          13,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "valid_schema_rate": 1.0,
+      "json_parse_rate": 1.0,
+      "invalid_category_rate": 0.0,
+      "missing_response_rate": 0.0,
+      "missing_or_uninterpretable_rate": 0.0,
+      "errors": {},
+      "latency_median_seconds": 0.0012897999840788543,
+      "latency_p95_seconds": 0.002273940003942698
+    },
+    "base": {
+      "n": 45,
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "Mortgage": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 15.0
+        },
+        "Debt collection": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 15.0
+        },
+        "Credit card": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 15.0
+        },
+        "micro avg": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 45.0
+        },
+        "macro avg": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 45.0
+        }
+      },
+      "confusion_labels": [
+        "Mortgage",
+        "Debt collection",
+        "Credit card",
+        "__INVALID__"
+      ],
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "valid_schema_rate": 0.0,
+      "json_parse_rate": 0.0,
+      "invalid_category_rate": 0.0,
+      "missing_response_rate": 0.0,
+      "missing_or_uninterpretable_rate": 1.0,
+      "errors": {
+        "json": 45
+      },
+      "latency_median_seconds": 9.036300700041465,
+      "latency_p95_seconds": 9.483273980021476
+    },
+    "lora": {
+      "n": 45,
+      "accuracy": 0.8,
+      "macro_f1": 0.796236559139785,
+      "per_class": {
+        "Mortgage": {
+          "precision": 0.7,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.8,
+          "support": 15.0
+        },
+        "Debt collection": {
+          "precision": 0.8125,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.8387096774193549,
+          "support": 15.0
+        },
+        "Credit card": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1-score": 0.75,
+          "support": 15.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.8375,
+          "recall": 0.7999999999999999,
+          "f1-score": 0.796236559139785,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.8375,
+          "recall": 0.8,
+          "f1-score": 0.7962365591397849,
+          "support": 45.0
+        }
+      },
+      "confusion_labels": [
+        "Mortgage",
+        "Debt collection",
+        "Credit card",
+        "__INVALID__"
+      ],
+      "confusion_matrix": [
+        [
+          14,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          13,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "valid_schema_rate": 1.0,
+      "json_parse_rate": 1.0,
+      "invalid_category_rate": 0.0,
+      "missing_response_rate": 0.0,
+      "missing_or_uninterpretable_rate": 0.0,
+      "errors": {},
+      "latency_median_seconds": 2.969129199977033,
+      "latency_p95_seconds": 3.138760479982011
+    }
+  }
+}

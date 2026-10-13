@@ -1,0 +1,55 @@
+{
+  "seed": 42,
+  "labels": [
+    "Mortgage",
+    "Debt collection",
+    "Credit card"
+  ],
+  "eligible_source_counts": {
+    "Debt collection": 64857,
+    "Mortgage": 45039,
+    "Credit card": 18614
+  },
+  "exclusions": {
+    "other_product": 490059,
+    "missing_or_short": 413294
+  },
+  "sample_before_dedup": 300,
+  "removed_duplicates": 0,
+  "near_duplicate_rule": "char_wb TF-IDF cosine >=0.90; connected components before split",
+  "word_length_percentiles": [
+    14.0,
+    154.0,
+    409.30000000000007,
+    2872.0
+  ],
+  "splits": {
+    "train": {
+      "n": 210,
+      "classes": {
+        "Mortgage": 70,
+        "Debt collection": 70,
+        "Credit card": 70
+      },
+      "sha256": "d271f6557b125b5f4e46e58f5c9018ce188d8d76aa2f92d23149f886a3cdfcf8"
+    },
+    "validation": {
+      "n": 45,
+      "classes": {
+        "Credit card": 15,
+        "Mortgage": 15,
+        "Debt collection": 15
+      },
+      "sha256": "201eba389ac720b7a3c8e5775bf235b8c60354c168e2eb46fdbfa679be81ff18"
+    },
+    "test": {
+      "n": 45,
+      "classes": {
+        "Debt collection": 15,
+        "Mortgage": 15,
+        "Credit card": 15
+      },
+      "sha256": "ec3e5046cc170b06907329cb69ed193e3235b2ecb70aa0f1688089ba58a08449"
+    }
+  }
+}

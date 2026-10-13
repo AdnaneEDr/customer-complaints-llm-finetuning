@@ -1,0 +1,7 @@
+{
+  "context": "isolated environment without torch, model weights or dataset; local rehearsal, not GitHub run",
+  "passed": 6,
+  "skipped": 7,
+  "ruff": "passed",
+  "server_health_http": 200
+}

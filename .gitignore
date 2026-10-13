@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+data/
+artifacts/
+.env
+reports/predictions_*.json
+reports/last_inference.json
+reports/ERROR_EXAMPLES.md

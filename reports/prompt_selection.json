@@ -1,0 +1,181 @@
+{
+  "variant": 0,
+  "validation_n": 6,
+  "candidates": [
+    {
+      "variant": 0,
+      "metrics": {
+        "n": 6,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "per_class": {
+          "Mortgage": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1.0
+          },
+          "Debt collection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1.0
+          },
+          "Credit card": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "micro avg": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 6.0
+          },
+          "macro avg": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 6.0
+          },
+          "weighted avg": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 6.0
+          }
+        },
+        "confusion_labels": [
+          "Mortgage",
+          "Debt collection",
+          "Credit card",
+          "__INVALID__"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "valid_schema_rate": 0.0,
+        "json_parse_rate": 0.0,
+        "invalid_category_rate": 0.0,
+        "missing_or_uninterpretable_rate": 1.0,
+        "errors": {
+          "json": 6
+        },
+        "latency_median_seconds": 7.273998599994229,
+        "latency_p95_seconds": 8.81015052497969
+      }
+    },
+    {
+      "variant": 1,
+      "metrics": {
+        "n": 6,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "per_class": {
+          "Mortgage": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1.0
+          },
+          "Debt collection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1.0
+          },
+          "Credit card": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "micro avg": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 6.0
+          },
+          "macro avg": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 6.0
+          },
+          "weighted avg": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 6.0
+          }
+        },
+        "confusion_labels": [
+          "Mortgage",
+          "Debt collection",
+          "Credit card",
+          "__INVALID__"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "valid_schema_rate": 0.0,
+        "json_parse_rate": 0.0,
+        "invalid_category_rate": 0.0,
+        "missing_or_uninterpretable_rate": 1.0,
+        "errors": {
+          "json": 6
+        },
+        "latency_median_seconds": 9.291324949997943,
+        "latency_p95_seconds": 10.07704434999323
+      }
+    }
+  ],
+  "tie_break": "first candidate"
+}
